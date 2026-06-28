@@ -104,18 +104,21 @@ The visualizations work together to identify profitable business areas, operatio
 
 ## Assumptions and Limitations
 
-Assumptions:
+### Assumptions
 
-- The provided dataset is complete and accurate.
-- The Return Flag correctly identifies returned orders.
-- Delivery Days were calculated using the difference between Ship Date and Order Date.
+During data inspection, the following assumptions were made:
 
-Limitations:
+- Date fields (`Order Date` and `Ship Date`) were correctly recognized by Tableau and used for time-based analysis.
+- Delivery Days were calculated as the difference between Ship Date and Order Date.
+- The `Return Flag` field uses binary values (0 = Not Returned, 1 = Returned), allowing return counts and return rate calculations.
+- Sales, Profit, Discount, and Quantity values were assumed to be complete and suitable for aggregation without additional data cleaning.
+- Geographic fields such as Region and State were assumed to be correctly categorized for regional analysis.
 
-- The dashboard is based only on the available dataset.
-- External factors such as marketing campaigns, seasonality, supplier performance, or customer satisfaction were not included.
-- The dashboard provides descriptive insights and does not perform predictive analysis.
+### Limitations
 
+- The dashboard is based only on the provided dataset and does not include external business factors such as marketing campaigns, economic conditions, or competitor activity.
+- The analysis is descriptive and does not include forecasting or predictive models.
+- Insights depend on the accuracy and completeness of the source data provided.
 ---
 
 ## Screenshots Included
